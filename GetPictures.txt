@@ -1,0 +1,31 @@
+function getPicture($pictures)
+{
+    ?>
+    <div class="col-md-4" style="display: flex; justify-content: center">
+        <div id="carousel_for_sale" class="carousel carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner center-block">
+                <?php
+                $first = true;
+                foreach ($pictures as $picture) {
+                ?>
+                    <div class="carousel-item <?php if ($first) {
+                                                    echo 'active';
+                                                    $first = false;
+                                                } ?>" data-bs-interval="3000">
+                        <img src="./images/<?php echo $picture['picture'] ?>" alt="...">
+                    </div>
+                <?php }
+                ?>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel_for_sale" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel_for_sale" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+<?php
+}

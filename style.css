@@ -1,0 +1,186 @@
+/* * {
+    font-family: monospace;
+} */
+
+/* HEADER */
+header img {
+    width: 100vw;
+    /* filter: blur(1px); */
+    transition: 1.5s;
+}
+
+header:hover img {
+    transition: 1.5s;
+    /* filter: blur(0); */
+}
+/* FIN HEADER */
+
+
+/* BODY */
+
+/* FIN BODY */
+
+
+
+/* NAVBAR */
+nav {
+    font-size: 20px;
+    background-color: rgb(30, 15, 1);
+}
+
+.collapse {
+    display: flex;
+    justify-content: center;
+}
+/* FIN NAVBAR */
+
+
+
+/* MAIN */
+main {
+    padding: 0vh 0vh 20vh 0vh;
+    background: linear-gradient(to bottom, rgba(201, 14, 14, 0.564),rgba(101, 36, 36, 0.493));
+    background-image: url(./images/etablie_garage_HD.jpg);
+    background-size: cover;
+    width: 100%;
+    /* background-position: center; */
+    background-attachment: fixed;
+    background-color: rgb(21, 21, 21);
+    border: solid 20px rgb(23, 12, 2);
+}
+
+
+/* FIN MAIN */
+
+
+
+
+/* CAROUSSEL */
+.carousel {
+    box-shadow: 10px 10px 90px black;
+}
+
+.carousel img {
+    width: 50vh;
+    display: flex;
+    border-radius: 2vh;
+}
+
+#carousel_for_sale {
+    display: flex;
+    align-items: center;
+}
+/* FIN CAROUSSEL */
+
+
+
+
+/* CARD */
+.card {
+    box-shadow: 5px 5px 30px black;
+}
+/* FIN CARD */
+
+
+
+
+
+/* FOOTER */
+footer {
+    font-size: 25px;
+    font-style: italic;
+    padding: 1vh 0vh 10vh 0vh;
+}
+
+#logo_footer {
+    width: 17vw;
+    transition: 1.5s;
+    border-radius: 180px;
+    box-shadow: rgb(21, 21, 21) 2px 2px 20px;
+}
+footer:hover #logo_footer {
+    transform: rotate(720deg);
+    transition: 1.5s;
+}
+
+footer i {
+    margin: 2vh;
+}
+
+footer img {
+    width: 9vh;
+    margin: 1vh;
+    transition: 0.5s;
+}
+footer img:hover  {
+    /* transition: 0.5s; */
+    transform: translateY(10px);
+}
+
+footer iframe {
+    visibility: visible;
+    z-index: 1000;
+    filter: grayscale(0.5);
+    border-radius: 2vh;
+    transition: 0.5s;
+}
+
+iframe:hover {
+    transform: scale(1.025);
+}
+
+#copyright_ico {
+    font-size: 10px;
+    color: white;
+}
+/* 
+footer h4 {
+    font-size: 30px;
+} */
+/* FIN FOOTER */
+
+
+
+
+
+/* TRICKS CSS */
+
+.typing {
+    height: 80vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing-effect {
+    width: 18ch;
+    animation: typing 2s steps(22), effect .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    font-family: monospace;
+    font-size: 1.5em;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes effect {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* FIN TRICKS CSS */
+
+
+/* ***********************FORMULAIRE DE CONNECTION*********************** */
+
+
+#form_connection input {
+    background-color: rgb(62, 26, 26);
+}
