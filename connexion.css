@@ -1,0 +1,137 @@
+#body-connexion {
+    background: url(./images/supra.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-connexion {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.434);
+}
+
+.bg-connexion img {
+    transition: 0.5s;
+}
+
+.row-img-btn:hover .img_1 {
+    transform: rotate(360deg);
+}
+
+.row-img-btn:hover .img_2 {
+    transform: rotate(-360deg);
+}
+
+/* ***********************FORMULAIRE DE CONNECTION*********************** */
+#form_connection input {
+    background-color: rgba(4, 4, 4, 0.653);
+}
+
+#logout {
+    transition: 0.3s;
+}
+
+.btn-close {
+    --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") !important;
+}
+
+#logout:hover {
+    transform: rotate(8deg);
+}
+
+.main-form {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.632);
+}
+
+input[type="radio"]:checked {
+    background-color: black;
+}
+
+.label_info .row {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#catalogue {
+    margin-top: 100px;
+}
+
+#catalogue h1 {
+    margin-bottom: 20px;
+}
+
+.nocars h2 {
+    background-color: rgba(255, 255, 255, 0.645);
+    padding: 20px;
+    font-weight: 600;
+}
+
+.head-catalogue {
+    background-color: rgba(255, 255, 255, 0.629);
+    padding: 20px;
+}
+
+#catalogue-sold,
+#catalogue-forsell {
+    font-weight: 600;
+}
+
+.card-catalogue {
+    background-color: rgba(255, 255, 255, 0.47);
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-catalogue img {
+    width: 13em;
+    padding-bottom: 20px;
+}
+
+.card-catalogue button img {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.card-catalogue button {
+    padding: 4px 12px;
+    margin: 4px 4px;
+}
+
+.card-catalogue button:hover img {
+    transform: rotate(180deg);
+}
+
+.edit_annonce_forsell,
+.edit_annonce_sold {
+    display: none;
+}
+
+
+
+@media (max-width:764px) {
+    #catalogue h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:540px) {
+    #catalogue h2 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:467px) {
+    .label_info .row {
+        display: flex;
+        justify-content: start;
+    }
+
+    .label_info {
+        margin-top: 30px !important;
+    }
+}

@@ -2,21 +2,15 @@
     font-family: monospace;
 } */
 
-/* HEADER */
-header img {
-    width: 100vw;
-    /* filter: blur(1px); */
-    transition: 1.5s;
-}
-
-header:hover img {
-    transition: 1.5s;
-    /* filter: blur(0); */
-}
-/* FIN HEADER */
-
 
 /* BODY */
+body {
+    overflow-x: hidden;
+}
+
+body #photo_header {
+    width: 100vw;
+}
 
 /* FIN BODY */
 
@@ -25,51 +19,188 @@ header:hover img {
 /* NAVBAR */
 nav {
     font-size: 20px;
-    background-color: rgb(30, 15, 1);
+    background-color: rgb(0, 0, 0);
+    border-bottom: solid 20px rgb(156, 139, 124);
+}
+
+.nav-link {
+    font-weight: 800 !important;
+    color: rgb(156, 139, 124) !important;
+}
+
+nav li {
+    transition: 0.3s;
+}
+
+nav li:hover {
+    transform: scale(1.05);
+}
+
+nav li:hover .nav-link {
+    color: rgb(180, 161, 145) !important;
 }
 
 .collapse {
     display: flex;
     justify-content: center;
 }
+
 /* FIN NAVBAR */
+
+
+/* BLOCS ACHAT VENTE */
+.bloc_achat_vente {
+    margin: 70px 0;
+}
+/* FIN BLOCS ACHAT VENTE */
+
+
+/* SECTION DISPO */
+#dispo img {
+    width: 17em;
+    height: auto;
+}
+
+.title_dispo {
+    background-color: #ffffffef;
+    border: 10px solid #9c8b7c;
+    padding: 20px;
+    color: #9c8b7c;
+}
+
+.title_dispo h1 {
+    font-weight: 700 !important;
+}
+
+/* FIN SECTION DISPO */
 
 
 
 /* MAIN */
 main {
-    padding: 0vh 0vh 20vh 0vh;
-    background: linear-gradient(to bottom, rgba(201, 14, 14, 0.564),rgba(101, 36, 36, 0.493));
-    background-image: url(./images/etablie_garage_HD.jpg);
+    padding: 50px 0vh 20vh 0vh;
+    background-image: url(./images/vintage_background.png);
     background-size: cover;
-    width: 100%;
-    /* background-position: center; */
+    background-position: center;
     background-attachment: fixed;
     background-color: rgb(21, 21, 21);
-    border: solid 20px rgb(23, 12, 2);
+    border: solid 20px rgb(156, 139, 124);
+    border-top: 0;
 }
-
 
 /* FIN MAIN */
 
+/* Images voitures à vendre */
+.card-index-forsell {
+    background-color: #e2dccde9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    border: 10px solid #9c8b7c;
+}
 
+.info_selling img {
+    padding-top: 10px;
+    width: 1.5em !important;
+}
+
+#dispo {
+    margin-bottom: 50px;
+}
+
+#sold {
+    margin-top: 100px;
+}
+
+#dispo .link_lbc {
+    color: white;
+    background-color: #cec5b6;
+    border-radius: 2vh;
+    transition: 0.1s;
+    margin: 10px 0;
+}
+
+#dispo .link_lbc:hover {
+    transform: scale(1.03);
+}
+
+#dispo .link_lbc a {
+    padding: 0 !important;
+}
+
+.parent_info_selling {
+    display: flex;
+    font-size: 13px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid transparent;
+    width: 208px;
+}
+
+.parent_info_selling p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 3px;
+}
+
+.info_selling {
+    background-color: #cec5b6;
+}
+
+.vertical_lign {
+    width: 1px;
+    height: 20px;
+    background-color: white;
+}
+
+.info_selling p {
+    font-weight: 500;
+    color: #333333;
+    padding-top: 5px;
+}
+
+.nocars-index h3 {
+    background-color: rgba(255, 255, 255, 0.645);
+    border: 5px solid rgba(0, 0, 0, 0.615);
+    padding: 20px;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+/* FIN Images voitures à vendre */
 
 
 /* CAROUSSEL */
 .carousel {
-    box-shadow: 10px 10px 90px black;
+    box-shadow: 20px -20px #9c8b7c;
+    background-color: #ffffffa1;
+    border: 1px solid #9c8b7c;
+    padding: 20px;
+    transition: 1s;
+}
+.carousel:hover {
+    box-shadow: -10px 10px #00000049;
 }
 
 .carousel img {
-    width: 50vh;
+    width: 350px;
     display: flex;
-    border-radius: 2vh;
+    /* border: 10px solid #d0c9bb76; */
 }
 
-#carousel_for_sale {
+#carousel_sold {
     display: flex;
     align-items: center;
 }
+
+
+.bg-carousel {
+    background-color: #e2dccd73;
+    padding: 30px;
+}
+
 /* FIN CAROUSSEL */
 
 
@@ -77,8 +208,9 @@ main {
 
 /* CARD */
 .card {
-    box-shadow: 5px 5px 30px black;
+    box-shadow: 5px 5px 5px #9c8b7c;
 }
+
 /* FIN CARD */
 
 
@@ -92,12 +224,24 @@ footer {
     padding: 1vh 0vh 10vh 0vh;
 }
 
+#title_footer_lbo {
+    display: none;
+    margin: 10px 0 30px 0;
+    color: white;
+    font-family: 'Foldit', cursive;
+}
+
+#title_footer_lbo h1 {
+    font-size: 50px;
+}
+
 #logo_footer {
     width: 17vw;
     transition: 1.5s;
     border-radius: 180px;
     box-shadow: rgb(21, 21, 21) 2px 2px 20px;
 }
+
 footer:hover #logo_footer {
     transform: rotate(720deg);
     transition: 1.5s;
@@ -112,7 +256,8 @@ footer img {
     margin: 1vh;
     transition: 0.5s;
 }
-footer img:hover  {
+
+footer img:hover {
     /* transition: 0.5s; */
     transform: translateY(10px);
 }
@@ -133,10 +278,7 @@ iframe:hover {
     font-size: 10px;
     color: white;
 }
-/* 
-footer h4 {
-    font-size: 30px;
-} */
+
 /* FIN FOOTER */
 
 
@@ -178,9 +320,71 @@ footer h4 {
 /* FIN TRICKS CSS */
 
 
-/* ***********************FORMULAIRE DE CONNECTION*********************** */
 
 
-#form_connection input {
-    background-color: rgb(62, 26, 26);
+
+
+
+/* MEDIA QUERIES */
+@media (min-width:1200px) {
+    footer iframe {
+        width: 360px;
+        height: 200px;
+    }
+
+    footer iframe:hover {
+        transform: scale(1.025);
+    }
+}
+
+@media (max-width:991px) {
+    footer #logo_footer {
+        margin: 30px 0;
+    }
+
+    #title_footer_lbo {
+        display: block;
+    }
+}
+
+@media (max-width:768px) {
+    main {
+        padding-top: 0 !important;
+    }
+
+    .title_dispo {
+        border-top: none;
+    }
+}
+
+@media (max-width:512px) {
+    .carousel img {
+        width: 270px !important;
+    }
+}
+
+@media (max-width:468px) {
+    .bg-carousel .card {
+        margin: 30px 5px !important;
+    }
+}
+
+@media (max-width: 390px) {
+    footer iframe {
+        width: 250px;
+    }
+}
+
+@media (max-width: 340px) {
+    footer iframe {
+        width: 200px;
+    }
+
+    .bg-carousel .card {
+        margin: 30px 0 !important;
+    }
+
+    .bg-carousel {
+        padding: 5px;
+    }
 }

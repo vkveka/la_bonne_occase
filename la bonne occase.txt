@@ -1,0 +1,36 @@
+Section 1 
+
+**blocs achat et vente à gauche du carousel vendu
+**Disponible à la vente 
+**Trois photos fixes
+**lien leboncoin pour chaque photo
+**"cliquez pour plus d'info" en dessous
+**comment supprimer des disponibles ( radio )
+**bouton pour changer le status 
+**bouton modifier l'annonce (modifier le lien lbc, le titre mais pas le status->déjà un bouton pour le status)
+**<hr> pour séparer dispo de vendues
+**Modal de confirmation pour la suppression des annonces
+**Ajouter les tables :
+  -années
+  -carburant
+  -kilométrage
+  Et rajouter les input dans le formulaire d'ajout de voiture sur Rh.php
+**Assombrir photo body pour plus de visibilité
+
+***************************************************
+
+inspiration izetta
+
+Input du lien leboncoin obligatoire ?
+
+Même photo pour à vendre et vendue ? (Sinon le déplacement vers vendu ne sert à rien)
+
+Responsive espace perso
+
+Phrase "que fait lbo" en haut du site au dessus des voitures à vendre
+
+Contenu à gauche du carousel des voitures vendues
+
+Voir pour un carousel agrandissable et navigable
+
+***************************************************
